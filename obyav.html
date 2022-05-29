@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Golden glass</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+.obyav
+{
+    width: 100%;
+    height: 750px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.obyav h1
+{
+    position: absolute;
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+
+
+
+.obyav .ob 
+{
+    position: absolute;
+    width: 320px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 18px;
+    margin-top: 4rem;
+}
+
+
+
+
+.obyav .ob h1 
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: #222;
+    margin-top: 0.8rem;
+}
+
+
+
+.obyav .ob h2
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #ffac34;
+    margin-top: 3.2rem;
+}
+
+
+
+.obyav .ob h3
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 5rem;
+}
+
+
+
+.obyav .ob .paket
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 6.7rem;
+}
+
+
+.obyav .ob .chena1
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 12.6rem;
+}
+
+
+
+.obyav .ob .chena1 spanA
+{
+    color: #f00;
+}
+
+
+
+
+.obyav .ob .fats
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 14.5rem;
+}
+
+
+
+
+.obyav .ob .paket2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket2 img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 16.5rem;
+}
+
+
+
+.obyav .ob .chena2
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 22.5rem;
+}
+
+
+.obyav .ob .chena2 spanA
+{
+    color: #f00;
+}
+
+
+
+
+
+.obyav .ob .pr1
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 25rem;
+}
+
+
+
+
+
+.obyav .ob .pr2
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #222;
+    margin-top: 26.5rem;
+}
+
+
+
+.obyav .ob .add
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: orange;
+    margin-top: 28rem;
+}
+
+
+
+.obyav .ob .add2
+{
+    position: absolute;
+    font-size: 1em;
+    color: #444;
+    margin-top: 29.5rem;
+}
+
+
+
+.obyav .ob .add3
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 30.8rem;
+}
+
+
+
+.obyav .ob .add4
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #f00;
+    margin-top: 32.5rem;
+}
+
+
+
+.obyav p
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 45rem;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+
+
+
+
+.obyav
+{
+    width: 100%;
+    height: 750px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.obyav h1
+{
+    position: absolute;
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+
+
+
+.obyav .ob 
+{
+    position: absolute;
+    width: 320px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 18px;
+    margin-top: 4rem;
+}
+
+
+
+
+.obyav .ob h1 
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: #222;
+    margin-top: 0.8rem;
+}
+
+
+
+.obyav .ob h2
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #ffac34;
+    margin-top: 3.2rem;
+}
+
+
+
+.obyav .ob h3
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 5rem;
+}
+
+
+
+.obyav .ob .paket
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 6.7rem;
+}
+
+
+.obyav .ob .chena1
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 12.6rem;
+}
+
+
+
+.obyav .ob .chena1 spanA
+{
+    color: #f00;
+}
+
+
+
+
+.obyav .ob .fats
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 14.5rem;
+}
+
+
+
+
+.obyav .ob .paket2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket2 img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 16.5rem;
+}
+
+
+
+.obyav .ob .chena2
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 22.5rem;
+}
+
+
+.obyav .ob .chena2 spanA
+{
+    color: #f00;
+}
+
+
+
+
+
+.obyav .ob .pr1
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 25rem;
+}
+
+
+
+
+
+.obyav .ob .pr2
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #222;
+    margin-top: 26.5rem;
+}
+
+
+
+.obyav .ob .add
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: orange;
+    margin-top: 28rem;
+}
+
+
+
+.obyav .ob .add2
+{
+    position: absolute;
+    font-size: 1em;
+    color: #444;
+    margin-top: 29.5rem;
+}
+
+
+
+.obyav .ob .add3
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 30.8rem;
+}
+
+
+
+.obyav .ob .add4
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #f00;
+    margin-top: 32.5rem;
+}
+
+
+
+.obyav p
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 45rem;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 2770px) {
+
+
+
+
+.obyav
+{
+    width: 100%;
+    height: 750px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.obyav h1
+{
+    position: absolute;
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+
+
+
+.obyav .ob 
+{
+    position: absolute;
+    width: 320px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 18px;
+    margin-top: 4rem;
+}
+
+
+
+
+.obyav .ob h1 
+{
+    position: absolute;
+    font-size: 1.6em;
+    color: #222;
+    margin-top: 0.8rem;
+}
+
+
+
+.obyav .ob h2
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #ffac34;
+    margin-top: 3.2rem;
+}
+
+
+
+.obyav .ob h3
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 5rem;
+}
+
+
+
+.obyav .ob .paket
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 6.7rem;
+}
+
+
+.obyav .ob .chena1
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 12.6rem;
+}
+
+
+
+.obyav .ob .chena1 spanA
+{
+    color: #f00;
+}
+
+
+
+
+.obyav .ob .fats
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 14.5rem;
+}
+
+
+
+
+.obyav .ob .paket2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.obyav .ob .paket2 img 
+{
+    position: absolute;
+    width: 120px;
+    margin-top: 16.5rem;
+}
+
+
+
+.obyav .ob .chena2
+{
+    position: absolute;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 22.5rem;
+}
+
+
+.obyav .ob .chena2 spanA
+{
+    color: #f00;
+}
+
+
+
+
+
+.obyav .ob .pr1
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 25rem;
+}
+
+
+
+
+
+.obyav .ob .pr2
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #222;
+    margin-top: 26.5rem;
+}
+
+
+
+.obyav .ob .add
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: orange;
+    margin-top: 28rem;
+}
+
+
+
+.obyav .ob .add2
+{
+    position: absolute;
+    font-size: 1em;
+    color: #444;
+    margin-top: 29.5rem;
+}
+
+
+
+.obyav .ob .add3
+{
+    position: absolute;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 30.8rem;
+}
+
+
+
+.obyav .ob .add4
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #f00;
+    margin-top: 32.5rem;
+}
+
+
+
+.obyav p
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 45rem;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <section class="obyav">
+        <h1>Объявления</h1>
+        <div class="ob">
+            <h1>Golden glass</h1>
+            <h2>Виды услуг:</h2>
+            <h3>•Стеклопакеты•</h3>
+            <div class="paket">
+                <img src="bg1.jpg">
+            </div>
+            <h4 class="chena1">От <spanA>1200</spanA> сом</h4>
+            <h3 class="fats">•Фацетные стекла и зеркалы•</h3>
+            <div class="paket2">
+                <img src="bg2.jpg">
+            </div>
+            <h4 class="chena2">От <spanA>3000</spanA> сом</h4>
+            <h5 class="pr1">Продажа стекла в розницу и оптом</h5>
+            <h5 class="pr2">Стекло Киргизия от 1600 сом</h5>
+            <h2 class="add">Адрес:</h2>
+            <h2 class="add2">Косымбекова 25/2</h2>
+            <h2 class="add3">Ориентир: Гор.ГАИ</h2>
+            <h2 class="add4">Тел: +996 755 002 002</h2>
+        </div>
+        <p>Golden glass™ ©2022</p>
+    </section>
+</body>

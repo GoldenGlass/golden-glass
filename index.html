@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Golden glass</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+      $(document).ready(function(){
+    $('#icon').click(function(){
+        $('ul').toggleClass('show');
+    })
+})
+  </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+nav 
+{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: -134.4rem;
+    backdrop-filter: blur(10px);
+}
+
+
+label
+{
+}
+
+
+label p 
+{
+    position: absolute;
+    font-size: 1.1em;
+    margin-top: 0.6rem;
+    padding: 15px;
+    color: rgba(255,255,255,0.7);
+}
+
+
+
+nav ul
+{
+    float: right;
+    margin-right: 40px;
+}
+
+
+nav li 
+{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+
+nav a 
+{
+    color: #000;
+    font-size: 20px;
+}
+
+
+nav #icon .container {
+  display: none ;
+  float: right;
+  padding: 10px;        
+  margin-top: 0.7rem; 
+}
+
+.bar1, .bar3 {
+  width: 33px;
+  height: 5px;
+  background-color: rgba(255,255,255,0.7);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+
+.bar2 {
+  width: 33px;
+  height: 5px;
+  background-color: rgba(255,255,255,0.7);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+.home .city
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+
+
+
+.home .city img
+{
+    width: 70%;
+}
+
+
+
+
+
+.home .down1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .down1 a 
+{
+    display: inline-block;
+    padding: 14px 80px;
+    background: gold;
+    color: #000;
+    font-size: 1.1em;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+
+
+.home .down1 a:hover
+{
+    background: #999;
+    box-shadow: 0px 0px 4px 4px #999;
+    transition: 0.3s
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    nav ul 
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    nav li 
+    {
+        display: block;
+    }
+    
+    nav li a 
+    {
+        font-size: 32px;
+        transition: 0.3s;
+        padding: 3px;
+    }
+    
+    
+    nav li a:hover
+    {
+        border-bottom: 3px solid rgba(0,0,0,0.3);
+        color: rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    nav #icon .container {
+        display: inline-block;
+        float: right;
+        padding: 3px;        
+        margin-top: 0.7rem; 
+      }
+    
+    nav #icon
+    {
+        width: 1px;
+         margin-left: 360px;
+    }
+    
+    nav ul.show
+    {
+        left: 0;
+    }
+    
+
+.home 
+{
+    width: 100%;
+    height: 900px;
+    background: #000;   
+}
+
+
+
+
+
+.home .topp
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home .topp h1
+{   
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 6rem;
+    line-height: 27px;
+    padding: 10px;
+}
+
+.home .topp h1 span 
+{
+    color: gold;
+    font-size: 1.4em;
+}
+
+
+
+
+
+.home #str
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: rgba(255,255,255,0.5);
+    margin-top: rem;
+    padding: 15px;
+}
+
+       
+
+.home h3
+{
+	position: absolute;
+	font-size: 0.8em;
+	color: #fff;
+	margin-top: rem;
+	padding: 15px;
+}
+
+
+.down1
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.down1 a 
+{
+    position: absolute;
+    display: inline-block;
+    padding: 14px 80px;
+    background: gold;
+    color: #000;
+    font-size: 1.1em;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 17rem;
+}
+
+
+
+.down1 a:hover
+{
+    background: #999;
+    box-shadow: 0px 0px 4px 4px #999;
+    transition: 0.3s
+}
+
+
+
+
+
+/********More1********/
+
+
+.more1 
+{
+    width: 100%;
+    height: 700px;
+    background: #444;
+    display: flex;
+    justify-content: center ;
+}
+
+
+.more1 h1
+{
+    font-size: 1.2em;
+    padding: 25px   ;
+}
+
+
+
+
+.more1 p
+{
+    position: absolute;
+    font-size: .8em;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+
+.more1 p spanA 
+{
+    color: gold;
+}
+
+
+.more1 .team
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.more1 .team img
+{
+    display: flex;
+    width: 55%;
+    left: 25%;
+    margin-top: 30rem;
+}
+
+
+
+
+/*******footer*******/
+
+
+footer
+{
+    width: 100%;
+    height: 400px;
+    background: #444;
+}
+
+
+footer .type1
+{
+    margin-top: rem;
+    padding: 30px;
+}
+
+footer .type1 ul li 
+{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+}
+
+
+footer .type1 ul li a
+{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+
+footer .type1 ul li a:hover
+{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.3s;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    nav ul 
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    nav li 
+    {
+        display: block;
+    }
+    
+    nav li a 
+    {
+        font-size: 32px;
+        transition: 0.3s;
+        padding: 3px;
+    }
+    
+    
+    nav li a:hover
+    {
+        border-bottom: 3px solid rgba(0,0,0,0.3);
+        color: rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+
+    nav #icon .container {
+        display: inline-block;
+        float: right;
+        padding: 3px;        
+        margin-top: 0.7rem; 
+      }
+    
+    nav #icon
+    {
+        width: 1px;
+         margin-left: 280px;
+    }
+    
+    nav ul.show
+    {
+        left: 0;
+    }
+    
+
+.home 
+{
+    width: 100%;
+    height: 900px;
+    background: #000;   
+}
+
+
+.home .topp
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home .topp h1
+{   
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 6rem;
+    padding: 15px;
+}
+
+.home .topp h1 span 
+{
+    color: gold;
+    font-size: 1.4em;
+}
+
+
+
+
+
+
+
+.home #str
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: rgba(255,255,255,0.5);
+    margin-top: 12rem;
+    padding: 30px;
+}
+
+
+
+
+       
+
+.home h3
+{
+	position: absolute;
+	font-size: 0.8em;
+	color: #fff;
+	margin-top: rem;
+	padding: 15px;
+}
+
+
+
+
+
+
+
+/********More1********/
+
+
+.more1 
+{
+    width: 100%;
+    height: 700px;
+    background: #444;
+    display: flex;
+    justify-content: center ;
+}
+
+
+.more1 h1
+{
+    font-size: 1.8em;
+    padding: 25px   ;
+}
+
+
+
+
+.more1  img 
+{
+    position: absolute;
+    width: 35%;
+    margin-top: 7rem;
+}
+
+
+.more1 p
+{
+    position: absolute;
+    font-size: .8em;
+    padding: 20px;
+    margin-top: 13rem;
+}
+
+
+.more1 .team
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.more1 .team img
+{
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    margin-top: 22rem;
+}
+
+
+
+
+/*******footer*******/
+
+
+footer
+{
+    width: 100%;
+    height: 400px;
+    background: #444;
+    margin-top: rem;
+}
+
+
+footer .type1
+{
+    position: absolute;
+    left: 1%;
+}
+
+footer .type1 ul li 
+{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+}
+
+
+footer .type1 ul li a
+{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+
+footer .type1 ul li a:hover
+{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.3s;
+}
+
+
+
+
+footer h4 
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #fff;
+    left: 6%;
+    margin-top: 14rem;
+}
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 2770px) {
+    
+  
+    
+    nav li a 
+    {
+        font-size: 20px;
+        transition: 0.3s;
+        padding: 3px;
+    }
+    
+    
+    nav li a:hover
+    {
+        border-bottom: 3px solid rgba(0,0,0,0.3);
+        color: rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+    
+    
+
+.home 
+{
+    width: 100%;
+    height: 1050px;
+    background: #000;   
+}
+
+
+
+
+
+
+.home .topp
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home .topp h1
+{   
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 6rem;
+    padding: 30px;
+}
+
+.home .topp h1 span 
+{
+    color: gold;
+    font-size: 1.4em;
+}
+
+
+
+.home .city
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+}
+
+
+.home .city img
+{
+    position: absolute;
+    width: 260px;
+}
+
+
+
+.home .down1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 19rem;
+
+}
+
+.home .down1 a 
+{
+    position: absolute;
+    display: inline-block;
+    padding: 14px 80px;
+    background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+
+.home .down1 a:hover
+{
+    background: #999;
+    box-shadow: 0px 0px 4px 4px #999;
+    transition: 0.3s
+}
+
+
+
+
+
+
+
+.home .down1
+
+{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 19rem;
+
+}
+
+.home .down1 a 
+{
+    position: absolute;
+    display: inline-block;
+    padding: 14px 80px;
+    background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+
+.home .down1 a:hover
+{
+    background: #999;
+    box-shadow: 0px 0px 4px 4px #999;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.home .down2
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 11rem;
+
+}
+
+.home .down2 a 
+{
+    position: absolute;
+    padding: 14px 70px;
+    background: #fff;
+    color: #222;
+    font-size: 1.1em;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+
+
+.home .down2 a:hover
+{
+    background: #999;
+    box-shadow: 0px 0px 4px 4px #999;
+    transition: 0.3s
+}
+
+
+
+
+
+
+
+       
+
+.home h3
+{
+	position: absolute;
+	font-size: 0.8em;
+	color: #fff;
+	margin-top: rem;
+	padding: 15px;
+}
+
+
+
+
+
+
+/********More1********/
+
+
+.more1 
+{
+    width: 100%;
+    height: 700px;
+    background: #444;
+    display: flex;
+    justify-content: center ;
+}
+
+
+.more1 h1
+{
+    font-size: 1.8em;
+    padding: 25px   ;
+    color: #fff;
+}
+
+
+
+
+.more1  img 
+{
+    position: absolute;
+    width: 35%;
+    margin-top: 3rem;
+}
+
+
+.more1 p
+{
+    position: absolute;
+    font-size: .8em;
+    padding: 20px;
+    margin-top: 21rem;
+    color: rgba(255,255,255,0.5);
+}
+
+
+.more1 .team
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.more1 .team img
+{
+    display: none;
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    margin-top: 22rem;
+}
+
+
+
+
+/*******footer*******/
+
+
+footer
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    margin-top: rem;
+}
+
+
+footer .type1
+{
+    position: absolute;
+    left: 0%;
+    margin-top: 0.5rem;
+}
+
+
+
+footer .type1 ul li 
+{
+    font-size: 0.8em;
+    margin-top: 0.8rem;
+}
+
+
+footer .type1 ul li a
+{
+    font-size: 1.1em;
+    margin-top: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+
+footer .type1 ul li a:hover
+{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.3s;
+}
+
+
+
+footer h4 
+{
+    position: absolute;
+    font-size: 0.8em;
+    color: #fff;
+    left: 7%;
+    margin-top: 14rem;
+}
+
+
+
+
+footer h5 
+{
+    position: absolute;
+    font-size: 0.7em;
+    color: gold;
+    margin-top: 23rem;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <section class="home">
+      <div class="topp">
+        <h1>Добро пожаловать на наш  сайт где  можете, найти нужное и надёжное вместе с <span> Golden glass.</span>Мы имеем легкий путь заказов...</h1>
+      </div>
+      <div class="city">
+    <img src="build.png">
+    </div>
+
+    <div id="str"></div>
+    <script src="main.js"></script>
+        
+        <div class="down1">
+            <a href="deliver.html">Дать заказ</a>
+        </div>
+        <div class="down2">
+            <a href="obyav.html">Объявления</a>
+        </div>
+        
+    </section>
+    
+
+
+
+
+<section class="more1">
+    <h1>Наша компания является <br> самым лучшим и распространенным в Средней Азии</h1>
+     
+    <p><spanA>Golden glass </spanA>– это крупнейшая фабрика по производству светопрозрачных конструкций любых масштабов и сложности. Создание фабрики является актуальным и, в своем роде, уникальным проектом для Узбекистана. Полный цикл автоматизированного производства позволяет предоставлять потребителям гарантированно.
+      Golden glass — крупнейшая фабрика по производству светопрозрачных конструкций любого масштаба и сложности.
+    </p>
+    <div class="team">
+      <img src="team.png">
+    </div>
+ 
+  </section>
+
+<footer>
+    <div class="type1">
+        <ul>
+            <li><a href="">О создателе</a></li>
+            <li><a href="">Узнать много</a></li>
+            <li><a href="">История Golden glass</a></li>
+            <li><a href="">Типы окон</a></li>
+            <li><a href="">О сайте</a></li>
+        </ul>
+    </div>
+    <h4>Тел: +(996)553 332 088</h4>
+    <h5>Golden glass™ ©2022</h5>
+</footer>
+
+
+<nav>
+  <label>
+    <p>Golden glass™</p>
+  </label>
+  <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="aboutus.html">О нас</a></li>
+      <li><a href="info.html">Инфо</a></li>
+      <li><a href="types.html">Типы окон</a></li>        
+  <li><a href="deliver.html">Дать заказ</a></li>
+      <li><a href="contact.html">Связатся</a></li>
+      
+  </ul>
+  <label id="icon">
+<div class="container" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+  </label>
+  <script>
+function myFunction(x) {
+ x.classList.toggle("change");
+}
+  </script>
+</nav>

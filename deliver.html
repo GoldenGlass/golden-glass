@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Дать заказ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <link rel="icon" href="/favicon.ico">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 500px)
+{
+
+.deliver
+{
+	width: 100%;
+	height: 1500px;
+}
+
+
+.deliver h1
+{
+	font-size: 3em;
+	color: #444;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+
+.deliver form
+{
+    
+}
+
+
+
+.deliver .inputs-block
+{
+	margin-top: 2rem;
+    padding: 20px;
+}
+
+
+.deliver .inputs-block-column h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver .inputs-wrapper
+{
+	margin-top: 0.2rem;
+}
+
+
+.deliver .inputs-wrapper input
+{
+	width: 70px;
+	height: 30px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+.deliver .total-number
+{
+	position: absolute;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block2
+{
+	margin-top: -0.5rem;
+}
+
+
+.deliver .inputs-block-column2 h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver .inputs-wrapper2
+{
+	margin-top: 1rem;
+}
+
+
+.deliver .inputs-wrapper2 input
+{
+	width: 200px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 1em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.deliver .total-numb
+{
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 10rem;
+}
+
+
+.deliver .total-numb input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .boxA
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: -10.5rem;
+}
+
+
+
+.deliver .boxA h3
+{
+	padding: 10px;
+}
+
+
+.deliver .total-number
+{
+	position: absolute;
+	margin-left: 650px;
+	margin-top: -1rem;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block-column3
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column4
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column5
+{
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: -480px;
+}
+
+
+.deliver .inputs-block-column5 h6
+{
+	font-size: 2em;
+	color: #faa520;
+}
+
+
+.deliver .inputs-block-column5 input
+{
+	font-size: 4em;
+	width: 214px;
+}
+
+
+
+.deliver .inputs-block-column6
+{
+	position: absolute;
+	margin-left: -470px;
+	margin-top: 2rem;
+}
+
+.deliver .inputs-block-column6 h6
+{
+	position: absolute;
+	font-size: 1.6em;
+	color: #f00;
+	margin-top: 2rem;
+}
+
+
+
+.deliver .inputs-block-column6 input
+{
+	font-size: 3em;
+	width: 128px;
+	color: #444;
+	margin-top: 12rem;
+}
+
+
+
+.deliver .total-numbA
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top:  -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbA input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbB
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbB input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbC
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbC input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbD
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbD input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbE
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbE input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbF
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbF input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbG
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbG input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+
+.deliver .total-numbH
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbH input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbI
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbI input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+.deliver .total-numbJ
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -2.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbJ input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+
+
+.deliver .form
+{
+	max-width: 550px;
+	margin-top: 20rem;
+	color: #444;
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.deliver .form_body
+{}
+
+.deliver .form_title
+{
+	font-size: 2em;
+	font-weight: 700;
+	margin: 2rem;
+}
+
+
+.deliver .form_item
+{
+	margin: 0px 0px 20px 0px;
+}
+
+
+.deliver .form_label
+{
+	font-size: 18px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	margin-left: 10px;
+}
+
+
+.deliver .form_input
+{
+	height: 50px;
+	padding: 0px 20px;
+	border-radius: 5px;
+	width: 80%;
+	font-size: 18px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	margin-left: 10px;
+}
+
+
+.deliver textarea.form_input
+{
+	min-height: 100px;
+	resize: vertical;
+}
+
+
+.deliver .form_button
+{
+	width: 200px;
+	height: 50px;
+	background: #444;
+	font-size: 1.1em;
+	border: none;
+	color: #fff;
+	border-radius: 30px;
+	margin-left: 10px;
+}	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px)
+{
+
+.deliver
+{
+	width: 100%;
+	height: 1500px;
+}
+
+
+.deliver h1
+{
+	font-size: 3em;
+	color: #444;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+
+.deliver .main-wrapper
+{
+    
+}
+
+
+
+.deliver .inputs-block
+{
+	margin-top: 2rem;
+    padding: 20px;
+}
+
+
+.deliver .inputs-block-column h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver .inputs-wrapper
+{
+	margin-top: 0.2rem;
+}
+
+
+.deliver .inputs-wrapper input
+{
+	width: 70px;
+	height: 30px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+.deliver .total-number
+{
+	position: absolute;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block2
+{
+	margin-top: -0.5rem;
+}
+
+
+.deliver .inputs-block-column2 h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver .inputs-wrapper2
+{
+	margin-top: 1rem;
+}
+
+
+.deliver .inputs-wrapper2 input
+{
+	width: 200px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 1em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.deliver .total-numb
+{
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 10rem;
+}
+
+
+.deliver .total-numb input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .boxA
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: -10.5rem;
+}
+
+
+
+.deliver .boxA h3
+{
+	padding: 10px;
+}
+
+
+.deliver .total-number
+{
+	position: absolute;
+	margin-left: 650px;
+	margin-top: -1rem;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block-column3
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column4
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column5
+{
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: -480px;
+}
+
+
+.deliver .inputs-block-column5 h6
+{
+	font-size: 2em;
+	color: #faa520;
+}
+
+
+.deliver .inputs-block-column5 input
+{
+	font-size: 4em;
+	width: 214px;
+}
+
+
+
+.deliver .inputs-block-column6
+{
+	position: absolute;
+	margin-left: -470px;
+	margin-top: 2rem;
+}
+
+.deliver .inputs-block-column6 h6
+{
+	
+	font-size: 1.6em;
+	color: #f00;
+	margin-top: 4rem;
+}
+
+
+
+.deliver .inputs-block-column6 input
+{
+	font-size: 3em;
+	width: 128px;
+	color: #444;
+}
+
+
+
+.deliver .total-numbA
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top:  -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbA input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbB
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbB input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbC
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbC input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbD
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbD input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbE
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbE input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbF
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbF input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbG
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbG input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+
+.deliver .total-numbH
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbH input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbI
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbI input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+.deliver .total-numbJ
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -2.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbJ input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+
+
+.deliver .form
+{
+	max-width: 550px;
+	margin-top: 20rem;
+	color: #444;
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.deliver .form_title
+{
+	font-size: 2em;
+	font-weight: 700;
+	margin: 2rem;
+}
+
+
+.deliver .form_item
+{
+	margin: 0px 0px 20px 0px;
+}
+
+
+.deliver .form_label
+{
+	font-size: 18px;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	margin-left: 10px;
+}
+
+
+.deliver .form_input
+{
+	height: 50px;
+	padding: 0px 20px;
+	border-radius: 5px;
+	width: 80%;
+	font-size: 18px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	margin-left: 10px;
+}
+
+
+.deliver textarea.form_input
+{
+	min-height: 100px;
+	resize: vertical;
+}
+
+
+.deliver .form_button
+{
+	width: 200px;
+	height: 50px;
+	background: #444;
+	font-size: 1.1em;
+	border: none;
+	color: #fff;
+	border-radius: 30px;
+	margin-left: 10px;
+}	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2770px)
+{
+
+.deliver
+{
+	width: 100%;
+	height: 1500px;
+}
+
+
+.deliver h1
+{
+	font-size: 3em;
+	color: #444;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+
+.deliver form
+{
+    
+}
+
+
+
+.deliver form .inputs-block
+{
+	margin-top: 2rem;
+    padding: 20px;
+}
+
+
+.deliver form .inputs-block-column h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver form .inputs-wrapper
+{
+	margin-top: 0.2rem;
+}
+
+
+.deliver form .inputs-wrapper input
+{
+	width: 70px;
+	height: 30px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+.deliver form .total-number
+{
+	position: absolute;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block2
+{
+	margin-top: -0.5rem;
+}
+
+
+.deliver .inputs-block-column2 h6
+{
+	font-size: 2em;
+	color: #444;
+}
+
+.deliver .inputs-wrapper2
+{
+	margin-top: 1rem;
+}
+
+
+.deliver .inputs-wrapper2 input
+{
+	width: 200px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: 0.5rem;
+	font-size: 1em;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.deliver .total-numb
+{
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 10rem;
+}
+
+
+.deliver .total-numb input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .boxA
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	margin-top: -10.5rem;
+}
+
+
+
+.deliver .boxA h3
+{
+	padding: 10px;
+}
+
+
+.deliver .total-number
+{
+	position: absolute;
+	margin-left: 650px;
+	margin-top: -1rem;
+}
+
+
+.deliver .total-number input
+{
+	border: none;
+	font-size: 2.5em;
+	color: #444;
+}
+
+
+.deliver .inputs-block-column3
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column4
+{
+	position: absolute;
+	margin-top: 2rem;
+}
+
+
+.deliver .inputs-block-column5
+{
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: -480px;
+}
+
+
+.deliver .inputs-block-column5 h6
+{
+	font-size: 2em;
+	color: #faa520;
+}
+
+
+.deliver .inputs-block-column5 input
+{
+	font-size: 4em;
+	width: 214px;
+}
+
+
+
+.deliver .inputs-block-column6
+{
+	position: absolute;
+	margin-left: -470px;
+	margin-top: 2rem;
+}
+
+.deliver .inputs-block-column6 h6
+{
+	font-size: 1.6em;
+	color: #f00;
+}
+
+
+
+.deliver .inputs-block-column6 input
+{
+	font-size: 3em;
+	width: 128px;
+	color: #444;
+	margin-top: 9rem;
+}
+
+
+
+.deliver .total-numbA
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top:  -5rem;
+	border: none;
+}
+
+
+.deliver .total-numbA input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbA h6
+{
+	margin-top: -1.5rem;
+}
+
+
+
+.deliver .total-numbB
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbB input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbC
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbC input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbD
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbD input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .total-numbE
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbE input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbF
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbF input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbG
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbG input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+
+.deliver .total-numbH
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbH input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+.deliver .total-numbI
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -4.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbI input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+.deliver .total-numbJ
+{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -2.1rem;
+	border: none;
+}
+
+
+.deliver .total-numbJ input
+{
+	border: none;
+	color: #444;
+	font-size: 1.4em;
+	width: 75px;
+}
+
+
+
+.deliver .button
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.deliver .button button
+{
+    display: inline-block;
+    padding: 13px 65px;
+    color: #fff;
+    background: #7474BF;
+    font-size: 1.1em;
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+
+
+
+
+}
+</style>
+</head>
+<body>
+	<section class="deliver">
+		<h1>Дать Заказ</h1>
+		<form action="https://formspree.io/f/xgedpwvn" method="POST">
+		    <label for="income-salary","income-freelance","income-extra-1">
+			<div class="inputs-block">
+				<div class="inputs-block-column">
+					<label for="income-salary">Заказ:</label>
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="income-salary"
+						name="Заказ 1"
+						class="input"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="income-freelance"
+						name="Заказ 1"
+						class="input"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="income-extra-1"
+						name="Заказ 1"
+						class="input"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column">
+					<div class="total-numbA">
+						<h6>m2</h6>
+						<input
+						type="number"
+						class="total"
+						id="total-month"
+						value="0"
+						readonly
+                        required
+name="Заказ 1"
+						>
+					</div>
+				</div>
+				 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="costs-flat"
+						name="Заказ 2"
+						class="input"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="costs-house-services"
+						name="Заказ 2"
+						class="input"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="costs-transport"
+						name="Заказ 2"
+						class="input"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column3">
+					<div class="total-numbB">
+						<input
+						type="number"
+						class="total"
+						id="total-year"
+						value="0"
+						readonly
+name="Заказ 2"
+required
+						>
+					</div>
+				</div>
+				 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="play-game"
+						class="input"
+						name="Заказ 3"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="play-war-game"
+						class="input"
+						name="Заказ 3"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="play-simulator"
+						class="input"
+						name="Заказ 3"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbC">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 3"
+						id="total-time"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+			 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="do-work"
+						class="input"
+						name="Заказ 4"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="do-food"
+						class="input"
+						name="Заказ 4"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="do-toy"
+						class="input"
+						name="Заказ 4"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbD">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 4"
+						id="total-toys"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+			 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="go-deliver"
+						class="input"
+						name="Заказ 5"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="go-to-school"
+						class="input"
+						name="Заказ 5"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="go-home"
+						class="input"
+						name="Заказ 5"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbE">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 5"
+						id="total-goes"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+				 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="get-gift"
+						class="input"
+						name="Заказ 6"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="get-money"
+						class="input"
+						name="Заказ 6"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="get-idea"
+						class="input"
+						name="Заказ 6"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbF">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 6"
+						id="total-gets"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+			 
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="got-phone"
+						class="input"
+						name="Заказ 7"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="got-pen"
+						class="input"
+						name="Заказ 7"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="got-pencil"
+						class="input"
+						name="Заказ 7"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbG">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 7"
+						id="total-gots"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+			
+					<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="see-street"
+						class="input"
+						name="Заказ 8"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="see-home"
+						class="input"
+						name="Заказ 8"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="see-pats"
+						class="input"
+						name="Заказ 8"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbH">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 8"
+						id="total-sees"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+		
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="sell-flower"
+						class="input"
+						name="Заказ 9"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="sell-cat"
+						class="input"
+						name="Заказ 9"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="sell-car"
+						class="input"
+						name="Заказ 9"
+						required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column4">
+					<div class="total-numbI">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 9"
+						id="total-sells"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+				<div class="inputs-block-column">
+					<div class="inputs-wrapper">
+						<input
+						type="number"
+						placeholder="Ширина"
+						id="make-food"
+						class="input"
+						name="Заказ 10"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Высота"
+						id="make-thing"
+						class="input"
+						name="Заказ 10"
+						required
+						>
+						<input
+						type="number"
+						placeholder="Кол-во"
+						id="make-breakfast"
+						class="input"
+						name="Заказ 10"
+						required
+						>
+					</div>
+				</div>
+				
+
+				<div class="inputs-block-column">
+					<div class="total-numbJ">
+						<input
+						type="number"
+						class="total"
+						name="Заказ 10"
+						id="total-food"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+			<div class="inputs-block-column6">
+					<div class="total-numb">
+						<h6>Общая Количество</h6>
+						<input
+						type="number"
+						class="total"
+						name="Общая количество"
+						id="have-number"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+						 
+		<div class="inputs-block-column5">
+					<div class="total-numb">
+						<h6>Общий m2</h6>
+						<input
+						type="number"
+						class="total"
+						name="Общий м2"
+						id="total-all"
+						value="0"
+						readonly
+required
+						>
+					</div>
+				</div>
+				<br>
+				<div class="button">
+  <button type="submit" class="btn btn-primary">Отправить</button>
+  </div>
+  </label>
+				</form>
+			
+			
+
+			
+				</div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+		<script>
+//income inputs 
+const incomeSalary = document.getElementById('income-salary'),
+      incomeFreelance = document.getElementById('income-freelance'),
+      incomeExtra1 = document.getElementById('income-extra-1');
+
+//costs inputs 
+const costsFlat = document.getElementById('costs-flat'),
+      costsHouseServices = document.getElementById('costs-house-services'),
+      costsTransport = document.getElementById('costs-transport');
+
+//play inputs 
+const playGame = document.getElementById('play-game'),
+      playWarGame = document.getElementById('play-war-game'),
+      playSimulator = document.getElementById('play-simulator');
+
+//make inputs
+const makeFood = document.getElementById('make-food'),
+      makeThing = document.getElementById('make-thing'),
+      makeBreakfast = document.getElementById('make-breakfast');
+
+//do inputs
+const doWork = document.getElementById('do-work'),
+      doFood = document.getElementById('do-food'),
+      doToy = document.getElementById('do-toy');
+
+//go inputs
+const goDeliver = document.getElementById('go-deliver'),
+      goToSchool = document.getElementById('go-to-school'),
+      goHome = document.getElementById('go-home');
+
+//get inputs
+const getGift = document.getElementById('get-gift'),
+      getMoney = document.getElementById('get-money'),
+      getIdea = document.getElementById('get-idea');
+
+//got inputs
+const gotPhone = document.getElementById('got-phone'),
+      gotPen = document.getElementById('got-pen'),
+      gotPencil = document.getElementById('got-pencil');
+
+//see inputs
+const seeStreet = document.getElementById('see-street'),
+      seeHome = document.getElementById('see-home'),
+      seePats = document.getElementById('see-pats');
+
+//sell inputs
+const sellFlower = document.getElementById('sell-flower'),
+      sellCat = document.getElementById('sell-cat'),
+      sellCar = document.getElementById('sell-car');
+
+
+//total inputs
+const totalMonthInput = document.getElementById('total-month');
+const totalYearInput = document.getElementById('total-year');
+const totalTimeInput = document.getElementById('total-time');
+const totalAllInput = document.getElementById('total-all');
+const totalHaveInput = document.getElementById('have-number');
+const totalFoodInput = document.getElementById('total-food');
+const totalToysInput = document.getElementById('total-toys');
+const totalGoesInput = document.getElementById('total-goes');
+const totalGetsInput = document.getElementById('total-gets');
+const totalGotsInput = document.getElementById('total-gots');
+const totalSeesInput = document.getElementById('total-sees');
+const totalSellsInput = document.getElementById('total-sells');
+
+
+
+let totalMonth, totalYear, totalTime, totalAll, totalHave, totalFood, totalToys, totalGoes, totalGets, totalGots, totalSees, totalSells;
+
+
+const inputs = document.querySelectorAll('.input');
+for(input of inputs) {
+    input.addEventListener('input', () => {
+      countingAvailableMoney();
+    })
+}
+
+const strToNum = str => str.value ? parseInt(str.value) : 0
+
+const countingAvailableMoney = () => {
+      const totalPerMonth = strToNum(incomeSalary) * strToNum(incomeFreelance) * strToNum(incomeExtra1)  / 1000000;
+      const totalCosts = strToNum(costsFlat) * strToNum(costsHouseServices) * strToNum(costsTransport) / 1000000;
+      const totalPlay = strToNum(playGame) * strToNum(playWarGame) * strToNum(playSimulator) / 1000000;
+      const totalMake = strToNum(makeFood) * strToNum(makeThing) * strToNum(makeBreakfast) / 1000000;
+      const totalNumber = strToNum(incomeExtra1) + strToNum(costsTransport) + strToNum(playSimulator) + strToNum(makeBreakfast) + strToNum(doToy) + strToNum(goHome) + strToNum(getIdea) + strToNum(gotPencil) + strToNum(seePats) + strToNum(sellCar);
+      const totalDo = strToNum(doWork) * strToNum(doFood) * strToNum(doToy) / 1000000;
+      const totalGo = strToNum(goDeliver) * strToNum(goToSchool) * strToNum(goHome) / 1000000;
+      const totalGet = strToNum(getGift) * strToNum(getMoney) * strToNum(getIdea) / 1000000;
+      const totalGot = strToNum(gotPhone) * strToNum(gotPen) * strToNum(gotPencil) / 1000000;
+      const totalSee = strToNum(seeStreet) * strToNum(seeHome) * strToNum(seeStreet) / 1000000;
+      const totalSell = strToNum(sellFlower) * strToNum(sellCat) * strToNum(sellCar) / 1000000;
+
+
+
+
+
+
+      totalMonth = totalPerMonth;
+      totalMonthInput.value = totalMonth;
+
+      totalYear = totalCosts;
+      totalYearInput.value = totalYear;
+
+      totalTime = totalPlay;
+      totalTimeInput.value = totalTime;
+
+      totalAll = totalPerMonth + totalCosts + totalPlay + totalFood + totalToys + totalGoes + totalGets + totalGots + totalSees + totalSells;
+      totalAllInput.value = totalAll;
+
+      totalHave = totalNumber;
+      totalHaveInput.value = totalHave;
+
+      totalFood = totalMake;
+      totalFoodInput.value = totalFood;
+
+      totalToys = totalDo;
+      totalToysInput.value = totalToys;
+
+      totalGoes = totalGo;
+      totalGoesInput.value = totalGoes;
+
+      totalGets = totalGet;
+      totalGetsInput.value = totalGets;
+
+      totalGots = totalGot;
+      totalGotsInput.value = totalGots;
+
+      totalSees = totalSee;
+      totalSeesInput.value = totalSees;
+
+      totalSells = totalSell;
+      totalSellsInput.value = totalSells;
+}
+
+
+
+
+		</script>
+	</section>
+</body>
+</html>
